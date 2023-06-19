@@ -1,31 +1,4 @@
-.signals-container {
+.header {
   padding: 16px;
-
-  .selected-car {
-    padding: 16px;
-    margin-bottom: 16px;
-    border: solid 1px red;
-  }
-
-  .total-price {
-    padding: 16px;
-    margin-bottom: 16px;
-    border: solid 1px red;
-    display: flex;
-    justify-content: flex-end;
-    font-size: 3em;
-  }
-
-  .add-ons {
-    padding: 16px;
-    margin-bottom: 16px;
-    border: solid 1px blue;
-
-    .add-on {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 8px;
-    }
-  }
+  background: cornflowerblue;
 }
