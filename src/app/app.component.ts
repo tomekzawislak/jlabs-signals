@@ -69,7 +69,7 @@ export class AppComponent {
       .reduce((partial, current) => partial + current, 0);
   }
 
-  calculatePrice(selected: boolean, addOn: AddOn) {
+  updateAddOnsSelection(selected: boolean, addOn: AddOn): void {
     this.addOns.mutate(addOns => addOns.find(el => el.id === addOn.id)!.selected = selected);
   }
 }
