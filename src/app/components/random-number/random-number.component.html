@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="random-number-container">
+    <div>Random number: x = {{randomNumber()}}</div>
+    <div>
+      <button mat-raised-button (click)="increaseNumber(-1)">-1</button>
+      <button mat-raised-button (click)="increaseNumber(1)">+1</button>
+      <button mat-raised-button (click)="reloadNumber()">Generate new</button>
+    </div>
+  </div>
+  <div class="others">
+    <p>Sqrt(x): {{sqrt()}}</p>
+    <p>x<sup>2</sup>: {{pow2()}}</p>
+    <p>lnx: {{log()}}</p>
+    <p>e<sup>x</sup>: {{exp()}}</p>
+  </div>
+</div>

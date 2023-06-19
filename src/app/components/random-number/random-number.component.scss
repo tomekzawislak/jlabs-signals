@@ -1,0 +1,22 @@
+.container {
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+
+  .random-number-container {
+    padding: 16px;
+    background-color: bisque;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      margin-left: 8px;
+    }
+  }
+
+  .others {
+    padding: 16px;
+  }
+}

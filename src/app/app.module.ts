@@ -8,11 +8,13 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { CarsComponent } from './components/cars/cars.component';
 import {AppRoutingModule} from './app-routing.module';
 import {MatButtonModule} from '@angular/material/button';
+import { RandomNumberComponent } from './components/random-number/random-number.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CarsComponent
+    CarsComponent,
+    RandomNumberComponent
   ],
   imports: [
     BrowserModule,
