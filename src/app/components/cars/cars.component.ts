@@ -19,6 +19,7 @@ export class CarsComponent {
     price: 100000,
     addOns: []
   });
+
   public addOns: WritableSignal<AddOn[]> = signal([
     {
       id: 1,

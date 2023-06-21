@@ -1,4 +1,4 @@
-import {Component, computed, signal, Signal, WritableSignal} from '@angular/core';
+import {Component} from '@angular/core';
 
 export interface Car {
   name: string;
@@ -6,6 +6,7 @@ export interface Car {
   price: number;
   addOns: AddOn[];
 }
+
 export interface AddOn {
   id: number;
   name: string;

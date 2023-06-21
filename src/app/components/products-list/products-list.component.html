@@ -1,0 +1,24 @@
+<div class="container">
+  <div>
+    <p>Using RxJS</p>
+    <ul>
+      <li *ngFor="let product of products"
+          class="product"
+          [class.selected]="product.id === (selectedProductId$ | async)"
+          (click)="onProductClick(product.id)">
+        {{ product.name }} ({{product.price | currency:'USD'}})
+      </li>
+    </ul>
+  </div>
+  <div>
+    <p>Using Signals</p>
+    <ul>
+      <li *ngFor="let product of products"
+          class="product"
+          [class.selected-signals]="product.id === selectedProductId()"
+          (click)="onProductClickSignals(product.id)">
+        {{ product.name }} ({{product.price | currency:'USD'}})
+      </li>
+    </ul>
+  </div>
+</div>

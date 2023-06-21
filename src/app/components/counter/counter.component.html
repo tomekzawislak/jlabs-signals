@@ -1,0 +1,11 @@
+<div class="container">
+  <div>Count: {{count()}}</div>
+  <div>Double count: {{doubleCount()}}</div>
+
+
+  <div>Count: {{count$ | async}}</div>
+  <div>Double count: {{doubleCount$ | async}}</div>
+
+  <div>Z: {{z$ | async}}</div>
+  <div (click)="changeX()">change x</div>
+</div>

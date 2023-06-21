@@ -1,5 +1,7 @@
-.signals-container {
-  padding: 16px;
+@import "../../../assets/styles/mixins";
+
+.container {
+  @include container;
 
   .selected-car {
     padding: 16px;

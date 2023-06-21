@@ -1,0 +1,23 @@
+@import "../../../assets/styles/mixins";
+
+.container {
+  @include container;
+
+  ul {
+    list-style-type: none;
+  }
+
+  .product {
+    padding: 16px;
+    border: solid 1px #646464;
+    margin-bottom: 8px;
+
+    &.selected {
+      border-color: red;
+    }
+
+    &.selected-signals {
+      border-color: green;
+    }
+  }
+}

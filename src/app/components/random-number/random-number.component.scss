@@ -1,7 +1,7 @@
+@import "../../../assets/styles/mixins";
+
 .container {
-  padding: 16px;
-  width: 100%;
-  box-sizing: border-box;
+  @include container;
 
   .random-number-container {
     padding: 16px;

@@ -1,5 +1,28 @@
 <header class="header">
-  <button mat-raised-button routerLink="./random-number">Random number</button>
-  <button mat-raised-button routerLink="./cars">Cars</button>
+<!--  <button mat-raised-button routerLink="./random-number">Random number</button>-->
+<!--  <button mat-raised-button routerLink="./cars">Cars</button>-->
+<!--  <button mat-raised-button routerLink="./products-list">Products list</button>-->
+
+  <button mat-icon-button [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="./random-number">
+      <mat-icon>dialpad</mat-icon>
+      <span>Random number</span>
+    </button>
+    <button mat-menu-item routerLink="./cars">
+      <mat-icon>toys</mat-icon>
+      <span>Cars</span>
+    </button>
+    <button mat-menu-item routerLink="./products-list">
+      <mat-icon>inventory</mat-icon>
+      <span>Products list</span>
+    </button>
+    <button mat-menu-item routerLink="./counter">
+      <mat-icon>schedule</mat-icon>
+      <span>Counter</span>
+    </button>
+  </mat-menu>
 </header>
 <router-outlet></router-outlet>
